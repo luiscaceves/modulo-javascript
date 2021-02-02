@@ -78,3 +78,21 @@ while (valor > 10) {
     valor = valor / 2;
     console.log('valor', valor);
 }
+
+let num = '5';
+console.log(num + 5);
+
+let arr = [ 1, 2, 3 ];
+console.log( arr[3] );
+
+for (let i=0; i <= 5; i++) {
+    console.log(i);
+  }
+
+  var message = "no";
+function foo(message) {
+  message = "yes";
+}
+foo( message );
+console.log( message );
+
