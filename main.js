@@ -1,98 +1,44 @@
-/*
-var edad = 21;
-var saludo;
+// Inicio de Ejercicio 4 de Febrero 21
 
 
-if (edad >= 18) {
-    saludo =  "mayor De Edad"; 
-} else if (edad < 18) {
-    saludo = "pelas eres un niño";
-}
- console.log(saludo)
- */
+let lista = [];
 
- /*
-let "autor"
+Agregar();
 
- var libro = 2;
-var text;
+    lista.forEach((element) => {
+        let nombre = element.nombre;
+        let edad = element.edad;
+        let grado = element.grado;
+        let grupo = element.grupo;
+        console.log(`Nombre: ${nombre}. Edad: ${edad}. Grado: ${grado}. Grupo: ${grupo}.`);
+    })
 
-switch (libro) {
-    case 0:
-        text = "padrino";
-        break;
-    case 1:
-        text = "condorito";
-        break;
-    case 2:
-        text = "vaquero";
-        break;
-    case 3:
-        text = "tvnotas";
-        break;
-        default:
-            text = "Error de libro"
+class Persona {
+    constructor(nombre, edad){
+        this.nombre = nombre;
+        this.edad = edad;
+    }
 }
 
-console.log(text);
-
-*/
-/*
-for(var i=1; i <= 10; i++) {
-    console.log('i vale', i);
-}
-*/
-
-
-
-
-
-
-/*
-
-for(var i=200; i >= 55; i--) {
-    i(i%3==0){
-    console.log('i vale', i);
-    } else(
-        continue
-    )
-}
-*/
-
-/*
-let valor = 100;
-
-while (valor > 10) {
-    valor = valor / 2;
-    console.log('valor', valor);
+class Alumno extends Persona {
+    constructor(nombre, edad, grado, grupo){
+        super(nombre, edad);
+        this.grado = grado;
+        this.grupo = grupo;
+    }
 }
 
-do {
-
-} while (valor > 10);
-*/
-
-let valor = 100;
-
-while (valor > 10) {
-    valor = valor / 2;
-    console.log('valor', valor);
+function Agregar(){
+    let respuesta = 'Y';
+    while(respuesta=='Y'){
+        let nombre = prompt('Nombre:');
+        let edad = prompt('Edad:');
+        let grado = prompt('Grado:');
+        let grupo = prompt('Grupo:');
+        let nuevo = new Alumno(nombre, edad, grado, grupo);
+        lista.push(nuevo);
+        respuesta = prompt('Deseas agregar un nuevo Alumno? Y/N');
+    }
 }
 
-let num = '5';
-console.log(num + 5);
-
-let arr = [ 1, 2, 3 ];
-console.log( arr[3] );
-
-for (let i=0; i <= 5; i++) {
-    console.log(i);
-  }
-
-  var message = "no";
-function foo(message) {
-  message = "yes";
-}
-foo( message );
-console.log( message );
 
