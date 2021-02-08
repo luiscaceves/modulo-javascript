@@ -47,13 +47,13 @@ let lista = [];
 let seleccion = (prompt('A agregar, B borrar, C buscar, D mostrar lista'));
 
     switch (seleccion){
-        case A:
+        case 'A':
             lista.push(prompt('Añadir un elemento a la lista?'));
             break;
-        case B:
-            lista.slice(lista.lastIndexOf(prompt('Eliminar un elemento?')),A)
+        case 'B':
+            lista.slice(lista.lastIndexOf(prompt('Eliminar un elemento?'))=A)
             break;
-        case C:
+        case 'C':
             if(lista.indexOf(prompt('Saber si un elemento existe?'))){
                 console.log('NO TENGO LO QUE BUSCAS')
             }
@@ -61,7 +61,7 @@ let seleccion = (prompt('A agregar, B borrar, C buscar, D mostrar lista'));
                 console.log('SI TENGO LO QUE BUSCAS')
             }
             break;
-        case D:
+        case 'D':
             console.log(lista);
             break;
         default:
