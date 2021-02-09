@@ -44,17 +44,23 @@
 
 let lista = [];
 
-let seleccion = (prompt('A agregar, B borrar, C buscar, D mostrar lista'));
+let seleccion = (prompt('A Agregar un Nuevo Contacto, B Buscar Contacto, C Eliminar Contacto, D Modificar Contacto'));
 
     switch (seleccion){
         case 'A':
-            lista.push(prompt('Añadir un elemento a la lista?'));
+            lista.push(prompt('Quieres añadir un nuevo contacto?'))
+            if(lista.push(prompt('Quieres añadir un nuevo contacto?'))
+                console.log('SI')
+            
+            else{
+                console.log('SI TENGO LO QUE BUSCAS')
+            }
             break;
         case 'B':
-            lista.slice(lista.lastIndexOf(prompt('Eliminar un elemento?'))=A)
+            lista.slice(lista.lastIndexOf(prompt('Buscar un contacto?'))=A)
             break;
         case 'C':
-            if(lista.indexOf(prompt('Saber si un elemento existe?'))){
+            if(lista.indexOf(prompt('Eliminar un Contacto?'))){
                 console.log('NO TENGO LO QUE BUSCAS')
             }
             else{
@@ -69,6 +75,11 @@ let seleccion = (prompt('A agregar, B borrar, C buscar, D mostrar lista'));
 
 
     }
+    
+
+
+
+
 
 
 
