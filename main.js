@@ -111,21 +111,21 @@
 
 
 
-let usuarios = [
-    {name: 'juan', edad: 17, hobbie: ['videojuegos', 'caminar']},
-    {name: 'pedro', edad: 127, hobbie: ['coleccionar playeras']},
-    {name: 'pablo', edad: 15, hobbie: ['videojuegos', 'bicicletas']},
-    {name: 'luis', edad: 16, hobbie: ['leer', 'cantar']},
-    {name: 'john', edad: 18, hobbie: ['bailar', 'dormir']}, 
+// let usuarios = [
+//     {name: 'juan', edad: 17, hobbie: ['videojuegos', 'caminar']},
+//     {name: 'pedro', edad: 127, hobbie: ['coleccionar playeras']},
+//     {name: 'pablo', edad: 15, hobbie: ['videojuegos', 'bicicletas']},
+//     {name: 'luis', edad: 16, hobbie: ['leer', 'cantar']},
+//     {name: 'john', edad: 18, hobbie: ['bailar', 'dormir']}, 
 
-];
+// ];
 
-let personaMayor = [];
-    for (let persona of usuarios) {
-        if (persona.edad > 17) {
-            personaMayor.push(persona);
-        }
-    }
+// let personaMayor = [];
+//     for (let persona of usuarios) {
+//         if (persona.edad > 17) {
+//             personaMayor.push(persona);
+//         }
+//     }
 
 
 
@@ -183,15 +183,54 @@ let personaMayor = [];
 
 //....
 
-let numeros = [3,4,6,7,8,93,4];
+// let numeros = [3,4,6,7,8,93,4];
 
-numeros.reduce((previous, current, currentIndex, currentArray) => previous + current );
+// numeros.reduce((previous, current, currentIndex, currentArray) => previous + current );
 
-numeros.reduce((previous, current, currentIndex, currentArray) => {
+// numeros.reduce((previous, current, currentIndex, currentArray) => {
     
-}, [])
+// }, [])
 
 
+let nombres = [
+    { nombre: 'Maria', calificaciones: [9,9,7,8,10] },
+    { nombre: 'Antonio', calificaciones: [9,8,7,8,10] },
+    { nombre: 'Juan', calificaciones: [9,9,7,8,2] },
+    { nombre: 'Luis', calificaciones: [9,9,7,8] },
+    { nombre: 'Ana', calificaciones: [9,9,7,8,10] },
+    { nombre: 'Maria', calificaciones: [9,9,8,10,5] },
+    { nombre: 'Pedro', calificaciones: [7,9,7,8,10] },
+    { nombre: 'Julio', calificaciones: [6,0,7,8,10] },
+]
+
+// retornar los alumnos con promedio mayor a 9
+
+// return []
+
+nombres.reduce((previous, current, currentIndex, currentArray) => {
+    if (currentArray % 5) {
+        
+    }
+},)
+
+let alumnos = [
+    { nombre: 'Maria', calificaciones: [9,9,7,8,10] }, // 
+    { nombre: 'Antonio', calificaciones: [9,8,7,8,10] },
+    { nombre: 'Juan', calificaciones: [9,9,7,8,2] },
+    { nombre: 'Luis', calificaciones: [9,9,7,8] },
+    { nombre: 'Ana', calificaciones: [9,9,7,8,10] },
+    { nombre: 'Maria', calificaciones: [9,9,8,10,10] },
+    { nombre: 'Pedro', calificaciones: [7,9,9,8,10] },
+    { nombre: 'Julio', calificaciones: [10,9,7,8,10] },
+];
+console.log(
+    alumnos.reduce((p,c) => {
+        if ((c.calificaciones.reduce((c1,c2) => c1+c2) / 5) > 8) {
+            p = [...p, c]
+        }
+        return p;
+    }, [])
+);
 
 
 
