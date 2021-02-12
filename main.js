@@ -192,49 +192,59 @@
 // }, [])
 
 
-let nombres = [
-    { nombre: 'Maria', calificaciones: [9,9,7,8,10] },
-    { nombre: 'Antonio', calificaciones: [9,8,7,8,10] },
-    { nombre: 'Juan', calificaciones: [9,9,7,8,2] },
-    { nombre: 'Luis', calificaciones: [9,9,7,8] },
-    { nombre: 'Ana', calificaciones: [9,9,7,8,10] },
-    { nombre: 'Maria', calificaciones: [9,9,8,10,5] },
-    { nombre: 'Pedro', calificaciones: [7,9,7,8,10] },
-    { nombre: 'Julio', calificaciones: [6,0,7,8,10] },
-]
+// let nombres = [
+//     { nombre: 'Maria', calificaciones: [9,9,7,8,10] },
+//     { nombre: 'Antonio', calificaciones: [9,8,7,8,10] },
+//     { nombre: 'Juan', calificaciones: [9,9,7,8,2] },
+//     { nombre: 'Luis', calificaciones: [9,9,7,8] },
+//     { nombre: 'Ana', calificaciones: [9,9,7,8,10] },
+//     { nombre: 'Maria', calificaciones: [9,9,8,10,5] },
+//     { nombre: 'Pedro', calificaciones: [7,9,7,8,10] },
+//     { nombre: 'Julio', calificaciones: [6,0,7,8,10] },
+// ]
 
 // retornar los alumnos con promedio mayor a 9
 
 // return []
 
-nombres.reduce((previous, current, currentIndex, currentArray) => {
-    if (currentArray % 5) {
+// nombres.reduce((previous, current, currentIndex, currentArray) => {
+//     if (currentArray % 5) {
         
-    }
-},)
+//     }
+// },)
 
-let alumnos = [
-    { nombre: 'Maria', calificaciones: [9,9,7,8,10] }, // 
-    { nombre: 'Antonio', calificaciones: [9,8,7,8,10] },
-    { nombre: 'Juan', calificaciones: [9,9,7,8,2] },
-    { nombre: 'Luis', calificaciones: [9,9,7,8] },
-    { nombre: 'Ana', calificaciones: [9,9,7,8,10] },
-    { nombre: 'Maria', calificaciones: [9,9,8,10,10] },
-    { nombre: 'Pedro', calificaciones: [7,9,9,8,10] },
-    { nombre: 'Julio', calificaciones: [10,9,7,8,10] },
-];
-console.log(
-    alumnos.reduce((p,c) => {
-        if ((c.calificaciones.reduce((c1,c2) => c1+c2) / 5) > 8) {
-            p = [...p, c]
-        }
-        return p;
-    }, [])
-);
+// let alumnos = [
+//     { nombre: 'Maria', calificaciones: [9,9,7,8,10] }, // 
+//     { nombre: 'Antonio', calificaciones: [9,8,7,8,10] },
+//     { nombre: 'Juan', calificaciones: [9,9,7,8,2] },
+//     { nombre: 'Luis', calificaciones: [9,9,7,8] },
+//     { nombre: 'Ana', calificaciones: [9,9,7,8,10] },
+//     { nombre: 'Maria', calificaciones: [9,9,8,10,10] },
+//     { nombre: 'Pedro', calificaciones: [7,9,9,8,10] },
+//     { nombre: 'Julio', calificaciones: [10,9,7,8,10] },
+// ];
+// console.log(
+//     alumnos.reduce((p,c) => {
+//         if ((c.calificaciones.reduce((c1,c2) => c1+c2) / 5) > 8) {
+//             p = [...p, c]
+//         }
+//         return p;
+//     }, [])
+// );
+
+console.log(document)
 
 
+const clases = ['rojo', 'azul', 'rosa', 'verde', 'violeta'];
 
+// Math.floor(Math.random() * (clases.length - min + 1)) + min;
 
+function colorAleatorio(id) {
+    const boton = document.getElementById(id);
+    const color = Math.floor(Math.random() * (clases.length - 0 + 1) ) + 0;
+    console.log(color);
+    boton.classList.add(clases[color]);
+}
 
 
 

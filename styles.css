@@ -1,0 +1,21 @@
+.rojo {
+    background-color: red;
+}
+.verde {
+    background-color: green;
+}
+.rosa {
+    background-color: pink;
+}
+.azul {
+    background-color: blue
+}
+.violeta {
+    background-color: blueviolet
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
