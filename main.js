@@ -145,6 +145,7 @@
     // push ()
     // personaMayor es igual [{name: 'juan', edad: 17, hobbie: ['videojuegos', 'caminar']}, {name: 'pedro', edad: 127, hobbie: ['coleccionar playeras']}]
 
+// inicio clase 07 
 
 // MAP
 
@@ -232,19 +233,95 @@
 //     }, [])
 // );
 
-console.log(document)
+// console.log(document)
 
+
+// const clases = ['rojo', 'azul', 'rosa', 'verde', 'violeta'];
+
+// // Math.floor(Math.random() * (clases.length - min + 1)) + min;
+
+// function colorAleatorio(id) {
+//     const boton = document.getElementById(id);
+//     const color = Math.floor(Math.random() * (clases.length - 0 + 1) ) + 0;
+//     console.log(color);
+//     boton.classList.add(clases[color]);
+// }
+
+// fin clase 07
+
+
+//ejercicios del 11 de febrero
+
+
+
+
+
+
+// let Datos = [];
+
+// Agregar ();
+
+//     lista.forEach((element) => {
+//         let A = element.A;
+//         let B = element.B;
+//         console.log(`A: ${A}. B: ${B}.`);
+//     })
+
+// class letras {
+//     constructor(A, B){
+//         this.A = A;
+//         this.B = B;
+//     }
+// }
+
+// class Datos extends letras {
+//     constructor(A, B){
+//         super(nombre, edad);
+//         this.grado = grado;
+//         this.grupo = grupo;
+//     }
+// }
+
+// function Agregar(){
+//     let respuesta = 3;
+//     if(respuesta A == B){
+//         let A = prompt('Ingresa dato A:');
+//         let B = prompt('Ingresa dato B:');
+//         let nuevo = new Datos(A, B);
+//         lista.push(nuevo);
+//         else{
+//             'A'>'B'
+//         }
+//         respuesta = prompt('Deseas agregar un nuevo Dato? Y/N');
+//     }
+// }
+
+
+//inicia clase 08
 
 const clases = ['rojo', 'azul', 'rosa', 'verde', 'violeta'];
 
-// Math.floor(Math.random() * (clases.length - min + 1)) + min;
+
 
 function colorAleatorio(id) {
     const boton = document.getElementById(id);
     const color = Math.floor(Math.random() * (clases.length - 0 + 1) ) + 0;
     console.log(color);
     boton.classList.add(clases[color]);
-}
+};
+
+var boton = document.querySelector("button");
+
+boton.addEventListener("click", () => {
+console.log('boton');
+});
+
+const variable = document.createElement('h2');
+
+variable.id = 'nuevoElemento';
+variable.innerHTML = 'Este es un H2'
+
+document.body.div.appendChild(variable);
 
 
 
