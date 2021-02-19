@@ -299,29 +299,60 @@
 
 //inicia clase 08
 
-const clases = ['rojo', 'azul', 'rosa', 'verde', 'violeta'];
+// const clases = ['rojo', 'azul', 'rosa', 'verde', 'violeta'];
 
 
 
-function colorAleatorio(id) {
-    const boton = document.getElementById(id);
-    const color = Math.floor(Math.random() * (clases.length - 0 + 1) ) + 0;
-    console.log(color);
-    boton.classList.add(clases[color]);
-};
+// function colorAleatorio(id) {
+//     const boton = document.getElementById(id);
+//     const color = Math.floor(Math.random() * (clases.length - 0 + 1) ) + 0;
+//     console.log(color);
+//     boton.classList.add(clases[color]);
+// };
 
-var boton = document.querySelector("button");
+// var boton = document.querySelector("button");
 
-boton.addEventListener("click", () => {
-console.log('boton');
-});
+// boton.addEventListener("click", () => {
+// console.log('boton');
+// });
 
-const variable = document.createElement('h2');
+// const variable = document.createElement('h2');
 
-variable.id = 'nuevoElemento';
-variable.innerHTML = 'Este es un H2'
+// variable.id = 'nuevoElemento';
+// variable.innerHTML = 'Este es un H2'
 
-document.body.div.appendChild(variable);
+// document.body.div.appendChild(variable);
 
+const alfabeto = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','W','X','Y','Z'];
+
+const agenda = [];
+
+function crearBoton() {
+    const contenedor = document.querySelectorAll('.botonera')[0];
+    alfabeto.forEach( letra => {
+        const el = document.createElement('button');
+        el.innerHTML = letra;
+        el.addEventListener('click', () => {
+            clickBotonesLetras();
+        });
+        contenedor.appendChild(el);
+    });
+}
+
+function clickBotonesLetras() {
+        alert('hola desde el boton')
+}
+
+function agregarContacto() {
+    const contacto = {};
+    contacto.nombre = document.querySelector('#nombre').value;
+    contacto.apellido = document.querySelector('#apellido').value;
+    contacto.telefono = document.querySelector('#telefono').value;
+    contacto.edad = document.querySelector('#edad').value;
+    document.querySelector('#nombre').value;
+    document.querySelector('#apellido').value;
+    document.querySelector('#telefono').value;
+    document.querySelector('#edad').value;
+}
 
 
