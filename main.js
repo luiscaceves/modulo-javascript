@@ -323,36 +323,60 @@
 
 // document.body.div.appendChild(variable);
 
-const alfabeto = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','W','X','Y','Z'];
+// const alfabeto = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','W','X','Y','Z'];
 
-const agenda = [];
+// const formulario = ['nombre','apellido','telefono','edad']
 
-function crearBoton() {
-    const contenedor = document.querySelectorAll('.botonera')[0];
-    alfabeto.forEach( letra => {
-        const el = document.createElement('button');
-        el.innerHTML = letra;
-        el.addEventListener('click', () => {
-            clickBotonesLetras();
-        });
-        contenedor.appendChild(el);
-    });
-}
+// const agenda = [];
 
-function clickBotonesLetras() {
-        alert('hola desde el boton')
-}
+// function crearBoton() {
+//     const contenedor = document.querySelectorAll('.botonera')[0];
+//     alfabeto.forEach( letra => {
+//         const el = document.createElement('button');
+//         el.innerHTML = letra;
+//         el.addEventListener('click', () => {
+//             clickBotonesLetras();
+//         });
+//         contenedor.appendChild(el);
+//     });
+// }
 
-function agregarContacto() {
-    const contacto = {};
-    contacto.nombre = document.querySelector('#nombre').value;
-    contacto.apellido = document.querySelector('#apellido').value;
-    contacto.telefono = document.querySelector('#telefono').value;
-    contacto.edad = document.querySelector('#edad').value;
-    document.querySelector('#nombre').value;
-    document.querySelector('#apellido').value;
-    document.querySelector('#telefono').value;
-    document.querySelector('#edad').value;
-}
+// function clickBotonesLetras() {
+//         alert('hola desde el boton')
+// }
 
+// function agregarContacto() {
+//     const contacto = {};
+//     formulario.forEach( el => contacto[el] = document.querySelector(`#))
+//     // contacto.nombre = document.querySelector('#nombre').value;
+//     // contacto.apellido = document.querySelector('#apellido').value;
+//     // contacto.telefono = document.querySelector('#telefono').value;
+//     // contacto.edad = document.querySelector('#edad').value;
+//     // document.querySelector('#nombre').value;
+//     // document.querySelector('#apellido').value;
+//     // document.querySelector('#telefono').value;
+//     // document.querySelector('#edad').value;   
+// }
 
+// const arreglo = [];
+
+// function hola() {
+//     alert('desde la funcion')
+// }
+
+// arreglo.push(hola);
+
+// arreglo[0]();
+
+function addElemento(texto){
+
+    var capa = document.getElementById("capa");
+    var h1 = document.createElement("h1");
+    h1.innerHTML = texto;
+    capa.appendChild(h1);
+  
+  }
+
+ var h1 = document.createElement('h1');
+ h1.innerHTML = 'hola mundo!!'
+ document.body.appendChild(h1)
